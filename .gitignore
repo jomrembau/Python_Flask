@@ -1,0 +1,59 @@
+# Virtual Environments
+
+venv/
+env/
+.venv/
+
+# Python Cache
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment Variables
+
+.env
+
+# Jupyter Notebooks
+
+.ipynb_checkpoints/
+
+# VS Code
+
+.vscode/
+
+# PyCharm
+
+.idea/
+
+# macOS
+
+.DS_Store
+
+# Windows
+
+Thumbs.db
+
+# Anaconda / Conda
+
+.conda/
+
+# Test and Coverage Files
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build Files
+
+build/
+dist/
+*.egg-info/
+
+
+# Virtual environments
+.venv/
+mynewflaskenv/
+venv/
+env/
