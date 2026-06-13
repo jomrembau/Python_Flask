@@ -10,5 +10,10 @@ def index():
 def info():
     return "<h1> Hello Universe! </h1>"
 
+#Dynamic Routing
+@app.route("/profile/<name>")
+def main_profile(name):
+    return "<h1> This is a page for {} </h1>".format(name)
+
 if __name__ == "__main__":
     app.run()
