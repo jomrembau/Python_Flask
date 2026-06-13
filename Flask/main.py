@@ -13,7 +13,7 @@ def info():
 #Dynamic Routing
 @app.route("/profile/<name>")
 def main_profile(name):
-    return "<h1> This is a page for {} </h1>".format(name)
+    return "<h1> This is a page for {} </h1>".format(name.title())
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
