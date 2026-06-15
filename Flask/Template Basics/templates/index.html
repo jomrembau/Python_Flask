@@ -10,5 +10,16 @@
     <h2>Hello, {{name}}!</h2>
     <h2>{{letters}}</h2>
     <h3>Puppy name: {{pup_dict["puppy_name"]}}</h3>
+
+    <h4>{{my_list}}</h4>
+
+    <ul>
+        {% for num in my_list %}
+            {% if num % 2 == 0 %}
+                <li> {{num}} </li>
+             {% endif %}
+        {% endfor %}
+    </ul>
+
 </body>
 </html>
