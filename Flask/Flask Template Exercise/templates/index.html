@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to username check.</h1>
+    <h2>Restraints:</h2>
+    <ul>
+        <li>Upper Case Letter.</li>
+        <li>Lower Case Letter.</li>
+        <li>Number at the end.</li>
+    </ul>
+
+    <form action="{{ url_for('check') }}">
+    <label for="username"> Username: </label>
+        <br>
+        <input type="text" id="username" name="username" value="John1">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+{%  endblock %}
