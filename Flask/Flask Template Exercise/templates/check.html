@@ -1,21 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+    <ul>
     {% if upper_case and lower_case and not missing_end_number %}
-        <p>Username Accepted.</p>
+        <li>Username Accepted.</li>
     {% endif %}
 
     {% if not upper_case %}
-        <p>Username must contain an uppercase letter.</p>
+        <li>Username must contain an uppercase letter.</li>
     {% endif %}
 
     {% if not lower_case %}
-        <p>Username must contain a lowercase letter.</p>
+        <li>Username must contain a lowercase letter.</li>
     {% endif %}
 
     {% if missing_end_number %}
-        <p>Username must end with a number.</p>
+        <li>Username must end with a number.</li>
     {% endif %}
+        </ul>
 
 {%  endblock %}
