@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, flash
 from flask_wtf import FlaskForm
 from wtforms import StringField,SubmitField
 
@@ -18,6 +18,7 @@ def index():
     if form.validate_on_submit():
         breed = form.breed.data
         form.breed.data = ""
+        flash(f"Your breed is a {breed}")
 
     return render_template("index.html", form=form, breed=breed)
 
