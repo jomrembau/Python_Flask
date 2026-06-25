@@ -9,7 +9,7 @@ from flask_dance.contrib.google import make_google_blueprint, google
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "mysecretkey"
 
-blueprint = make_google_blueprint(client_id="", client_secret="",offline=True,scope=["profile","email"])
+blueprint = make_google_blueprint(client_id="GOOGLE_CLIENT_ID", client_secret="GOOGLE_CLIENT_SECRET",offline=True,scope=["profile","email"])
 
 app.register_blueprint(blueprint,url_prefix="/login")
 
