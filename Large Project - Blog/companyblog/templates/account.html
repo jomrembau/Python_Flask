@@ -10,8 +10,8 @@
     </div>
 
     <div class="container">
-        <form method="POST">
-            {{ form.hidden_tag }}
+        <form method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
 
             <div class="form-group">
                 {{ form.username.label(class="form-group") }}  {{ form.username(class="form-control") }}
